@@ -1,0 +1,518 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  text-decoration-line: none;
+}
+a:active {
+  color: black;
+}
+
+a:visited {
+  color: #658ec6;
+}
+
+h1 {
+  color: #426696;
+  font-weight: 600;
+  font-size: 2.5rem;
+  opacity: 0.8;
+}
+h2,
+p {
+  color: #658ec6;
+  font-weight: 500;
+  opacity: 0.8;
+}
+h2 {
+  font-size: 25px;
+}
+p {
+  font-size: 20px;
+}
+
+h3 {
+  color: #426696;
+  font-weight: 600;
+  opacity: 0.8;
+  font-size: 25px;
+}
+.side {
+  display: none;
+}
+
+main {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glass {
+  background: white;
+  min-height: 80vh;
+  margin: 3rem;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+  z-index: 2;
+  backdrop-filter: blur(2rem);
+  display: flex;
+  width: 80%;
+  max-width: 1200px;
+}
+.dashboard2 {
+  display: none;
+}
+.sidebar {
+  display: none;
+}
+.wave {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.dashboard {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+}
+.links {
+  width: inherit;
+}
+.link {
+  display: flex;
+  margin: 2rem 0rem;
+  padding: 1rem 0rem;
+  align-items: center;
+  width: 100%;
+  text-decoration-line: none;
+}
+.link-active {
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  border-radius: 2rem;
+  color: white !important;
+}
+.link:hover {
+  cursor: pointer;
+  background-color: white;
+  border-radius: 2rem;
+}
+.link h2 {
+  padding: 0rem 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#icon {
+  flex: 10%;
+  display: grid;
+  padding-right: 15px;
+}
+
+#title {
+  flex: 90%;
+  text-align: left;
+}
+
+.data {
+  flex: 2;
+}
+
+.pro {
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  border-radius: 2rem;
+  color: white;
+  padding: 1rem;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.pro h2 {
+  color: white;
+}
+
+div.item {
+  vertical-align: top;
+  display: inline-block;
+  width: 120px;
+}
+
+.caption {
+  display: block;
+}
+
+.status input {
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border: none;
+  width: 80%;
+  padding: 0.5rem;
+  border-radius: 2rem;
+}
+
+.data {
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.card {
+  display: flex;
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.5)
+  );
+  border-radius: 1rem;
+  margin: 2rem 0rem;
+  padding: 1rem;
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+  justify-content: space-between;
+}
+.card p a {
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  color: #426696;
+  /* border: 1px solid #426696; */
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.card p a:hover {
+  background-color: white;
+}
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+.card p {
+  font-size: 20px;
+}
+
+.skill h2 {
+  margin-bottom: 1rem;
+}
+.skill span {
+  margin-right: 2rem;
+}
+
+.skill img {
+  width: 50px;
+}
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+  margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+#pid {
+  float: left;
+  margin: 0 15px;
+  border-radius: 10px;
+  width: 15rem;
+}
+
+.social a {
+  padding-right: 3rem;
+}
+
+.social a:hover {
+  transform: scale(1.2);
+}
+
+.progress {
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  width: 100%;
+  height: 25%;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+.progress::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: rgb(236, 236, 236);
+  position: absolute;
+  left: 60%;
+}
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-info p {
+  font-size: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+  .glass {
+    max-width: 600px;
+    width: 60%;
+    margin-top: 100px;
+  }
+  .move {
+    margin-top: 20rem;
+  }
+  .dashboard {
+    display: none;
+  }
+  .sidebar {
+    display: block;
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    background: white;
+    z-index: 4;
+  }
+  .link {
+    margin: 0.5rem 0;
+    padding: 1rem 0;
+  }
+  .dashboard2 {
+    display: block;
+    z-index: 5;
+    height: 5rem;
+    background: linear-gradient(
+      to left top,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.5)
+    );
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .scroll {
+    background-color: white;
+  }
+  .nav-right {
+    float: left;
+    display: flex;
+    margin: 1rem;
+  }
+  .toggle {
+    float: right;
+    margin: 1rem;
+  }
+  .user {
+    margin: 0 1rem;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    padding: 0;
+    background: linear-gradient(
+      to left top,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.5)
+    );
+  }
+  .link-active {
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    border-radius: 2rem;
+    color: white !important;
+  }
+
+  #icon {
+    justify-content: center;
+    display: flex;
+    flex: 0;
+  }
+  #title {
+    justify-content: center;
+    display: flex;
+    flex: 0;
+  }
+  .data {
+    max-width: 500px;
+    width: 60%;
+  }
+
+  .user h3,
+  .user p {
+    display: none;
+  }
+  .user img {
+    width: 50px;
+  }
+  .card-info p {
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  .social img {
+    width: 50px;
+  }
+  .social a {
+    padding-right: 1rem;
+  }
+  .pro {
+    width: 11rem;
+  }
+  .pro h2 {
+    color: white;
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .glass {
+    width: 500px;
+  }
+  #pid {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .glass {
+    margin: 0;
+    margin-top: 100px;
+    display: flex;
+    width: 500px;
+  }
+  .move {
+    margin-top: 22rem;
+  }
+  .status h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  .data {
+    max-width: 500px;
+    width: 60%;
+    margin: 1rem;
+  }
+  .status input {
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3)
+    );
+    padding: 0.5px;
+    border: none;
+    width: 100%;
+    border-radius: 2rem;
+  }
+  .card {
+    margin-top: 0;
+  }
+  .card-info p {
+    font-size: 1rem;
+  }
+  .dashboard2 {
+    display: block;
+    z-index: 5;
+    height: 6rem;
+    background: linear-gradient(
+      to left top,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.5)
+    );
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+  }
+  .nav-right {
+    float: none;
+    display: flex;
+    margin: 1rem;
+  }
+  .pro {
+    width: 10rem;
+  }
+  .pro h2 {
+    color: white;
+    font-size: 1rem;
+  }
+  .scroll {
+    background-color: white;
+  }
+  .links {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .user img {
+    display: none;
+  }
+  .status input {
+    display: none;
+  }
+  .pro{
+    
+  }
+}
