@@ -46,7 +46,7 @@ h3 {
 }
 
 main {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', serif;
   min-height: 100vh;
   background: linear-gradient(to right top, #65dfc9, #6cdbeb);
   display: flex;
@@ -421,6 +421,7 @@ div.item {
   }
   .pro {
     width: 11rem;
+    padding: 0.7rem;
   }
   .pro h2 {
     color: white;
@@ -492,6 +493,7 @@ div.item {
   }
   .pro {
     width: 10rem;
+    padding: 0.7rem;
   }
   .pro h2 {
     color: white;
@@ -513,6 +515,7 @@ div.item {
     display: none;
   }
   .pro{
+    padding: 0.7rem;
     
   }
 }
