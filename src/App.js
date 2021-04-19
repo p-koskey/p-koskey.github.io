@@ -7,7 +7,7 @@ import About from './components/About'
 import Projects from './components/Projects'
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
-
+import avatar from './assets/avatar.png'
 function App() {
   const [click, setClick] = useState(false);
   const [navbar, setNavbar] = useState(false);
@@ -34,7 +34,7 @@ function App() {
         </div>
         <div className="nav-right">
           <div className="user">
-            <img src="avatar.png" alt="" />
+            <img src={avatar} alt="" />
             <h3>Patience Koskey</h3>
             <p>Full Stack Web Developer</p>
           </div>
@@ -60,7 +60,7 @@ function App() {
       <section className={click ? 'glass move' : 'glass'}>
         <div className="dashboard">
           <div className="user">
-            <img src="avatar.png" alt="" />
+            <img src={avatar} alt="" />
             <h3>Patience Koskey</h3>
             <p> Full Stack Web Developer</p>
           </div>

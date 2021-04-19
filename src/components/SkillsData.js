@@ -1,47 +1,57 @@
+import html from '../assets/html5.png'
+import css from '../assets/css.png'
+import js from '../assets/js.png'
+import python from '../assets/python.png'
+import angular from '../assets/angular.png'
+import react from '../assets/react.png'
+import django from '../assets/django.png'
+import flask from '../assets/flask.png'
+import postgres from '../assets/postgres.png'
+
 export const SkillsData ={
  "languages":
  [
 
  {
-   image: 'html5.png',
+   image: html,
    caption: 'HTML',
  },
  {
-   image: 'css-3.png',
+   image: css,
    caption: 'CSS',
  },
  {
-   image: 'js.png',
+   image: js,
    caption: 'JavaScript',
  },
  {
-   image: 'python.png',
+   image: python,
    caption: 'Python',
  }
 
 ], 
 "frameworks":[
  {
-   image: 'angular.png',
+   image: angular,
    caption: 'Angular 10',
  },
  {
-   image: 'react.png',
+   image: react,
    caption: 'React',
  },
  {
-   image: 'django.png',
+   image: django,
    caption: 'Django',
  },
  {
-   image: 'flask.png',
+   image: flask,
    caption: 'Flask',
  },
 ],
 "databases":
 [
 {
-   image: 'postgres.png',
+   image: postgres,
    caption: 'Postgresql',
  }
 ]

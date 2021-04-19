@@ -2,7 +2,7 @@ import {ProjectsData} from './ProjectsData'
 
 const Skills = () => {
  return (
-   <div>
+   <div className="dataa">
           <div className="status">
             <h1 style={{textAlign:'center'}}>Projects  <span>💻</span></h1>
             

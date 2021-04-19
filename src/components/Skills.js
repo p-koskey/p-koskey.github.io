@@ -2,7 +2,7 @@ import React from 'react'
 import {SkillsData} from './SkillsData'
 const Skills = () => {
  return (
-   <>
+   <div className="dataa">
           <div className="status">
             <h1 style={{textAlign:'center'}}>Skills   <span>👩🏽‍💻</span></h1>
             
@@ -58,7 +58,7 @@ const Skills = () => {
             
             
           </div>
-        </>
+        </div>
  )
 }
 
