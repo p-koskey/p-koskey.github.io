@@ -13,18 +13,18 @@ a:active {
 }
 
 a:visited {
-  color: #658ec6;
+  color: #101927;
 }
 
 h1 {
-  color: #426696;
+  color: #000;
   font-weight: 600;
   font-size: 2.5rem;
   opacity: 0.8;
 }
 h2,
 p {
-  color: #658ec6;
+  color: #101927;
   font-weight: 500;
   opacity: 0.8;
 }
@@ -36,7 +36,7 @@ p {
 }
 
 h3 {
-  color: #426696;
+  color: #000;
   font-weight: 600;
   opacity: 0.8;
   font-size: 25px;
@@ -48,7 +48,7 @@ h3 {
 main {
   font-family: 'Poppins', serif;
   min-height: 100vh;
-  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  background: linear-gradient(to right top, #cfcfcf, #7ad0dc);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -182,7 +182,7 @@ ul li a .s-icon {
   text-decoration-line: none;
 }
 .link-active {
-  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  background: white;
   border-radius: 2rem;
   color: white !important;
 }
@@ -237,7 +237,6 @@ ul li a .s-icon {
 }
 
 .pro {
-  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
   border-radius: 2rem;
   color: white;
   padding: 1rem;
@@ -245,8 +244,8 @@ ul li a .s-icon {
   margin-bottom: 0.5rem;
 }
 
-.pro h2 {
-  color: white;
+.pro h3 {
+  color: black;
 }
 
 div.item {
@@ -282,21 +281,15 @@ div.item {
 }
 .card {
   display: flex;
-  background: linear-gradient(
-    to left top,
-    rgba(255, 255, 255, 0.8),
-    rgba(255, 255, 255, 0.5)
-  );
   border-radius: 1rem;
   margin: 2rem 0rem;
   padding: 1rem;
-  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
   justify-content: space-between;
 }
 .card p a {
   background: linear-gradient(to right top, #65dfc9, #6cdbeb);
-  color: #426696;
-  /* border: 1px solid #426696; */
+  color: #000;
+  /* border: 1px solid #000; */
   border-radius: 10px;
   padding: 5px;
 }
@@ -376,7 +369,8 @@ div.item {
 }
 
 .card-info p {
-  font-size: 24px;
+  font-size: 20px;
+  text-align: center;
 }
 
 @media screen and (max-width: 1000px) {

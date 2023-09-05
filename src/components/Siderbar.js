@@ -7,21 +7,18 @@ const Siderbar = () => {
   <>
    
           <div className="links">
-            {SidebarData.map((val,key)=>{
+            {SidebarData.map((val)=>{
               return(
-                <>
-                <NavLink className="link" key={key} to={val.link} exact activeClassName="link-active">              
+                <NavLink className="link" key={val.id} to={val.link} exact activeClassName="link-active">              
                   
-                  <h2 key={key} >
-                    <div id="icon" key={key}>{val.icon}   </div>              
+                  <h2  >
+                    <div id="icon" >{val.icon}   </div>              
                     <div id="title">{val.title}</div>
                    
                   </h2>
                   
                 
                 </NavLink>
-               
-               </>
               )
             })}
             

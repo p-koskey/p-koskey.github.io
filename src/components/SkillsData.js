@@ -1,39 +1,39 @@
-import html from '../assets/html5.png'
-import css from '../assets/css.png'
-import js from '../assets/js.png'
+
 import python from '../assets/python.png'
 import angular from '../assets/angular.png'
 import react from '../assets/react.png'
 import django from '../assets/django.png'
 import flask from '../assets/flask.png'
 import postgres from '../assets/postgres.png'
+import c from '../assets/c#.png'
+import netcore from '../assets/netcore.png'
+import ss from '../assets/SS.png'
+import net from '../assets/NET.png'
+import sql from '../assets/SQL.png'
 
-export const SkillsData ={
- "languages":
- [
+export const SkillsData =[
 
- {
-   image: html,
-   caption: 'HTML',
- },
- {
-   image: css,
-   caption: 'CSS',
- },
- {
-   image: js,
-   caption: 'JavaScript',
- },
+  {
+    image: c,
+    caption: 'C#',
+  },
  {
    image: python,
    caption: 'Python',
- }
+ },
 
-], 
-"frameworks":[
+
+  {
+    image: netcore,
+    caption: '.NET Core',
+  },
+  {
+    image: net,
+    caption: '.NET',
+  },
  {
    image: angular,
-   caption: 'Angular 10',
+   caption: 'Angular',
  },
  {
    image: react,
@@ -44,15 +44,21 @@ export const SkillsData ={
    caption: 'Django',
  },
  {
-   image: flask,
-   caption: 'Flask',
- },
-],
-"databases":
-[
+  image: flask,
+  caption: 'Flask',
+},
+{
+  image: sql,
+  caption: 'SQL',
+},
+ 
 {
    image: postgres,
    caption: 'Postgresql',
- }
-]
+ },
+ {
+  image: ss,
+  caption: 'SQL Server',
 }
+
+]

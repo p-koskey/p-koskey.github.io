@@ -10,52 +10,27 @@ const Skills = () => {
           <div className="cards">
             <div className="card">
               <div className="card-info">
+              <div>
+                 <h2>Software Development</h2>               
+                  
+                  <h2 style={{ fontSize:'18px'}}>Experienced in both functional and OOP.</h2> 
+
+                  </div>
                 <div className="skill">
-                 <h2>Languages</h2>
-                 {SkillsData.languages.map((item,key)=>{
+                 <h2 style={{ fontSize:'18px'}}>I have experience with :</h2>
+                 {SkillsData.map((item,key)=>{
                    return (
                      <div key={key} className="item">
                        <img src={item.image} alt=""/>
                        <span className="caption">{item.caption}</span>
+                       <br/>
                        </div>  
                    )
-                 })}               
+                 })} 
 
                 </div>
               </div>
             </div>
-            <div className="card">
-              <div className="card-info">
-                <div className="skill">
-                 <h2>Frameworks /  Libraries</h2>
-                 {SkillsData.frameworks.map((item,key)=>{
-                   return (
-                     <div key={key} className="item">
-                       <img src={item.image} alt=""/>
-                       <span className="caption">{item.caption}</span>
-                       </div>                  )
-                     })}               
-
-                </div>
-              </div>
-            </div>
-            <div className="card">
-              <div className="card-info">
-                <div className="skill">
-                 <h2>Databases</h2>
-                 {SkillsData.databases.map((item,key)=>{
-                   return (
-                     <div key={key} className="item">
-                       <img src={item.image} alt=""/>
-                       <span className="caption">{item.caption}</span>
-                       </div>                )
-                   
-                 })}               
-
-                </div>
-              </div>
-            </div>
-            
             
           </div>
         </div>

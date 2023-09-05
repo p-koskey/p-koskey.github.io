@@ -8,6 +8,8 @@ import Projects from './components/Projects'
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
 import avatar from './assets/avatar.png'
+import Experience from './components/Experience'
+
 function App() {
   const [click, setClick] = useState(false);
   const [navbar, setNavbar] = useState(false);
@@ -66,7 +68,7 @@ function App() {
           </div>
         <Sidebar/>
         <a href="https://drive.google.com/file/d/1P0MS8u9crsxduwIj_JAU4yMdpLRQu7UZ/view?usp=sharing" target="_blank" rel="noreferrer"><div className="pro">
-            <h2>View My Resume</h2>
+            <h3>Download My Resume</h3>
             
           </div></a>
         </div>
@@ -76,6 +78,7 @@ function App() {
     <Route path='/' exact component = {About}/>
     <Route path='/skills' component = {Skills}/>
     <Route path='/projects' component = {Projects}/>
+    <Route path='/experience' component = {Experience}/>
     </Switch>
         </div>
       </section>
