@@ -7,8 +7,11 @@ import About from './components/About'
 import Projects from './components/Projects'
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
-import avatar from './assets/avatar.png'
-import Experience from './components/Experience'
+import avatar from './assets/avatar.png';
+import Experience from './components/Experience';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import MailOutlineIcon from '@material-ui/icons/MailOutline';
 
 function App() {
   const [click, setClick] = useState(false);
@@ -37,23 +40,19 @@ function App() {
         <div className="nav-right">
           <div className="user">
             <img src={avatar} alt="" />
-            <h3>Patience Koskey</h3>
-            <p>Full Stack Web Developer</p>
-          </div>
-          
-         
-        <a href="https://drive.google.com/file/d/1D9j6elGizHQkhqpOc12GYmnhVA6GZaZp/view?usp=sharing" target="_blank" rel="noreferrer"><div className="pro">
-            <h2>View My Resume</h2>
-            
-          </div></a>
+          </div>         
           
         </div>
-         
+      
         </div>
         <div onClick={handleClick} className="sidebar">
           {click ? <Sidebar/> : ''}
           
-
+          <ul className="social" style={{display: 'none'}}>
+                <li><a href="https://github.com/p-koskey" target="_blank" rel="noreferrer" title="  Github"><GitHubIcon className="s-icon github"/></a> </li>
+                <li><a href="mailto:patiencekoskey@gmail.com" target="_blank" rel="noreferrer" title="G-mail"><MailOutlineIcon className="s-icon mail" /></a></li>
+                <li><a href="https://www.linkedin.com/in/pkoskey/" target="_blank" rel="noreferrer" title="LinkedIn"><LinkedInIcon className="s-icon linkedin"/></a></li>
+              </ul>
         </div>
         </nav>
        
@@ -64,13 +63,14 @@ function App() {
           <div className="user">
             <img src={avatar} alt="" />
             <h3>Patience Koskey</h3>
-            <p> Full Stack Web Developer</p>
+            <ul className="social">
+                <li><a href="https://github.com/p-koskey" target="_blank" rel="noreferrer" title="  Github"><GitHubIcon className="s-icon github"/></a> </li>
+                <li><a href="mailto:patiencekoskey@gmail.com" target="_blank" rel="noreferrer" title="G-mail"><MailOutlineIcon className="s-icon mail" /></a></li>
+                <li><a href="https://www.linkedin.com/in/pkoskey/" target="_blank" rel="noreferrer" title="LinkedIn"><LinkedInIcon className="s-icon linkedin"/></a></li>
+              </ul>
           </div>
         <Sidebar/>
-        <a href="https://drive.google.com/file/d/1P0MS8u9crsxduwIj_JAU4yMdpLRQu7UZ/view?usp=sharing" target="_blank" rel="noreferrer"><div className="pro">
-            <h3>Download My Resume</h3>
-            
-          </div></a>
+    
         </div>
         
          <div className="data">

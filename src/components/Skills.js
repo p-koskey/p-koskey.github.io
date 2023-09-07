@@ -10,17 +10,17 @@ const Skills = () => {
           <div className="cards">
             <div className="card">
               <div className="card-info">
-              <div>
+              <div style={{ textAlign:'center'}}>
                  <h2>Software Development</h2>               
                   
-                  <h2 style={{ fontSize:'18px'}}>Experienced in both functional and OOP.</h2> 
+                  <h2 style={{ fontSize:'18px'}}>Experienced in both functional and object oriented programming.</h2> 
 
                   </div>
                 <div className="skill">
-                 <h2 style={{ fontSize:'18px'}}>I have experience with :</h2>
-                 {SkillsData.map((item,key)=>{
+                  <br/>
+                 {SkillsData.map((item)=>{
                    return (
-                     <div key={key} className="item">
+                     <div key={item.id} className="item">
                        <img src={item.image} alt=""/>
                        <span className="caption">{item.caption}</span>
                        <br/>

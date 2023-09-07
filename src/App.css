@@ -62,7 +62,7 @@ ul li a {
   height: 60px;
   display: block;
   text-align: center;
-  margin: 0 10px;
+  margin: 10px 10px;
   border-radius: 50%;
   padding: 6px;
   box-sizing: border-box;
@@ -112,7 +112,6 @@ ul li a .s-icon {
   backdrop-filter: blur(2rem);
   display: flex;
   width: 1200px;
-  height: 800px;
   zoom: 90%;
 }
 .dashboard2 {
@@ -239,13 +238,13 @@ ul li a .s-icon {
 .pro {
   border-radius: 2rem;
   color: white;
-  padding: 1rem;
   position: relative;
   margin-bottom: 0.5rem;
 }
 
 .pro h3 {
-  color: black;
+  color: #1a5eca;
+  font-size: 20px;
 }
 
 div.item {
@@ -274,7 +273,6 @@ div.item {
   margin: 3rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
 }
 .dataa {
   overflow: auto;
@@ -373,6 +371,16 @@ div.item {
   text-align: center;
 }
 
+.round
+{
+  border-radius: 15px;
+  background: linear-gradient(to right, #ffffff, #dfdfdf);
+  padding: 5px;
+  color: black;
+  margin-right: 5px;
+  font-weight: 500;
+}
+
 @media screen and (max-width: 1000px) {
   .glass {
     max-width: 600px;
@@ -428,6 +436,10 @@ div.item {
     margin: 1rem;
   }
   .user {
+    margin: 0 1rem;
+  }
+
+  .social {
     margin: 0 1rem;
   }
   .links {
@@ -489,6 +501,7 @@ div.item {
     color: white;
     font-size: 19px;
   }
+  
 }
 @media screen and (max-width: 750px) {
   .glass {
