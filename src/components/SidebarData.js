@@ -27,12 +27,12 @@ export const SidebarData = [
  },
 
 
- {
-  id: 3,
-  title:"Projects",
-  icon: <FolderSpecialIcon  style={{ fontSize: 30 }} />,
-  link: "/projects" 
- },
+//  {
+//   id: 3,
+//   title:"Projects",
+//   icon: <FolderSpecialIcon  style={{ fontSize: 30 }} />,
+//   link: "/projects" 
+//  },
  
 ]
 

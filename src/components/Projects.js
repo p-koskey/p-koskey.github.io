@@ -1,4 +1,11 @@
 import {ProjectsData} from './ProjectsData'
+import * as React from 'react';
+import Card from '@material-ui/core/Card';
+import CardMedia from '@material-ui/core/CardMedia';
+import CardContent from '@material-ui/core/CardContent';
+import CardActions from '@material-ui/core/CardActions';
+import Typography from '@material-ui/core/Typography';
+import Button from '@material-ui/core/Button';
 
 const Skills = () => {
  return (
@@ -8,27 +15,27 @@ const Skills = () => {
             
           </div>
                
-                <div className="cards" >
-                  {ProjectsData.map((item,key)=>{
-              return(
-              <div key={key} className="card" style={{display:'inline-block'}}>             
-                
-                 <img src={item.image} alt=""  id="pid" style={{width:'150px'}}/> 
-                 
-                 <h2>{item.title}
-                 </h2>
-
-                  
-                  <p style={{color:'black', fontSize:'15px'}}>{item.description}<br/>
-                  <br/>
-                  <a href={item.githubLink} target="_blank" rel="noreferrer" style={{marginRight:'1rem'}}>Github link</a> <span></span>
-                  <a href={item.link} target="_blank" rel="noreferrer">Website link</a>
-                  </p> 
-              </div>
-
-              )
-              })}
-              </div>
+          <Card sx={{ maxWidth: 345 }}>
+      <CardMedia
+        component="img"
+        alt="green iguana"
+        height="140"
+        image="'../assets/search.jpg'"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          Lizard
+        </Typography>
+        <Typography variant="body2" color="secondary">
+          Lizards are a widespread group of squamate reptiles, with over 6,000
+          species, ranging across all continents except Antarctica
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small">Share</Button>
+        <Button size="small">Learn More</Button>
+      </CardActions>
+    </Card>
              
               </div>
               

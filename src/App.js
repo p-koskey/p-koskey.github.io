@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Skills from './components/Skills'
 import About from './components/About'
 import Projects from './components/Projects'
-import MenuIcon from '@material-ui/icons/Menu';
+import MenuIcon from '@material-ui/icons/Apps';
 import CloseIcon from '@material-ui/icons/Close';
 import avatar from './assets/avatar.png';
 import Experience from './components/Experience';
@@ -32,10 +32,8 @@ function App() {
       <nav>
       <div className={navbar ? 'dashboard2 scroll' : 'dashboard2'}>
         <div className="toggle" onClick={handleClick}>
-          {click ? <CloseIcon color="primary" style={{ fontSize: 40 }}/> : <MenuIcon color="primary" style={{ fontSize: 40 }}/> }
-              
-          
-         
+          <br/>
+        <h4>Connect With Me  </h4>       
         </div>
         <div className="nav-right">
           <div className="user">
@@ -45,10 +43,9 @@ function App() {
         </div>
       
         </div>
-        <div onClick={handleClick} className="sidebar">
-          {click ? <Sidebar/> : ''}
+        <div onClick={handleClick} className={click ? 'sidebar' : 'hide'}>
           
-          <ul className="social" style={{display: 'none'}}>
+          <ul className="social-mobile">
                 <li><a href="https://github.com/p-koskey" target="_blank" rel="noreferrer" title="  Github"><GitHubIcon className="s-icon github"/></a> </li>
                 <li><a href="mailto:patiencekoskey@gmail.com" target="_blank" rel="noreferrer" title="G-mail"><MailOutlineIcon className="s-icon mail" /></a></li>
                 <li><a href="https://www.linkedin.com/in/pkoskey/" target="_blank" rel="noreferrer" title="LinkedIn"><LinkedInIcon className="s-icon linkedin"/></a></li>
@@ -77,9 +74,14 @@ function App() {
           <Switch>
     <Route path='/' exact component = {About}/>
     <Route path='/skills' component = {Skills}/>
-    <Route path='/projects' component = {Projects}/>
     <Route path='/experience' component = {Experience}/>
     </Switch>
+        </div>
+
+        <div className="mobile-view">
+          <About/>
+          <Experience/>
+          <Skills/>
         </div>
       </section>
       

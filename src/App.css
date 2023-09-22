@@ -118,6 +118,7 @@ ul li a .s-icon {
   display: none;
 }
 .sidebar {
+
   display: none;
 }
 .wave {
@@ -300,6 +301,10 @@ div.item {
   justify-content: center;
 }
 
+.social-mobile{
+  display: none;
+}
+
 .card p {
   font-size: 20px;
 }
@@ -381,20 +386,30 @@ div.item {
   font-weight: 500;
 }
 
+.mobile-view
+{
+  display: none;
+}
+
 @media screen and (max-width: 1000px) {
   .glass {
     max-width: 600px;
     width: 60%;
     margin-top: 100px;
     max-height: none;
+    background: none;
   }
   .dataa {
     overflow: hidden;
   }
   .move {
-    margin-top: 20rem;
+    margin-top: 100px;
   }
   .dashboard {
+    display: none;
+  }
+  .hide
+  {
     display: none;
   }
   .sidebar {
@@ -412,7 +427,7 @@ div.item {
   .dashboard2 {
     display: block;
     z-index: 5;
-    height: 5rem;
+    height: 4.5rem;
     background: linear-gradient(
       to left top,
       rgba(255, 255, 255, 0.8),
@@ -427,20 +442,22 @@ div.item {
     background-color: white;
   }
   .nav-right {
-    float: left;
+    float: right;
     display: flex;
     margin: 1rem;
   }
   .toggle {
-    float: right;
+    float: left;
     margin: 1rem;
   }
   .user {
     margin: 0 1rem;
   }
 
-  .social {
-    margin: 0 1rem;
+  .social-mobile {
+    display: flex;
+    margin-top: 80px;
+    padding: 0;
   }
   .links {
     display: flex;
@@ -487,10 +504,10 @@ div.item {
   h1 {
     font-size: 2rem;
   }
-  .social img {
-    width: 50px;
+  .social-mobile img {
+    width: 30px;
   }
-  .social a {
+  .social-mobile a {
     padding-right: 1rem;
   }
   .pro {
@@ -501,11 +518,28 @@ div.item {
     color: white;
     font-size: 19px;
   }
+
+  .mobile-view
+  {
+    max-width: 1000px;
+    margin: 1rem;
+    display: block;
+  }
+  .data {
+    
+    display: none;
+  }
+  .dataa
+{
+  padding: 75px 0;
+}
+
   
 }
 @media screen and (max-width: 750px) {
   .glass {
     width: 500px;
+    background: none
   }
   #pid {
     display: none;
@@ -518,10 +552,22 @@ div.item {
     display: flex;
     width: 500px;
     max-height: none;
+    background: none;
   }
+  .mobile-view
+{
+  max-width: 500px;
+  margin: 1rem;
+  display: block;
+}
+
+.dataa
+{
+  padding: 75px 0;
+}
 
   .move {
-    margin-top: 22rem;
+    margin-top: 100px;
   }
   .status h1 {
     font-size: 25px;
@@ -529,9 +575,8 @@ div.item {
   }
 
   .data {
-    max-width: 500px;
-    width: 60%;
-    margin: 1rem;
+    
+    display: none;
   }
   .status input {
     background: linear-gradient(
@@ -553,7 +598,7 @@ div.item {
   .dashboard2 {
     display: block;
     z-index: 5;
-    height: 6rem;
+    height: 4.5rem;
     background: linear-gradient(
       to left top,
       rgba(255, 255, 255, 0.8),
@@ -564,7 +609,7 @@ div.item {
     top: 0;
   }
   .nav-right {
-    float: none;
+    float: right;
     display: flex;
     margin: 1rem;
   }
