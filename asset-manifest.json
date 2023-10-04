@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/koskey.tech/static/css/main.a707207c.css",
-    "main.js": "/koskey.tech/static/js/main.a68e1898.js",
-    "static/js/377.8325c12b.chunk.js": "/koskey.tech/static/js/377.8325c12b.chunk.js",
-    "static/media/avatar.png": "/koskey.tech/static/media/avatar.c0e1aef67ecf68fbff4c.png",
-    "index.html": "/koskey.tech/index.html",
-    "main.a707207c.css.map": "/koskey.tech/static/css/main.a707207c.css.map",
-    "main.a68e1898.js.map": "/koskey.tech/static/js/main.a68e1898.js.map",
-    "377.8325c12b.chunk.js.map": "/koskey.tech/static/js/377.8325c12b.chunk.js.map"
+    "main.css": "/static/css/main.a707207c.css",
+    "main.js": "/static/js/main.7f64942e.js",
+    "static/js/377.8325c12b.chunk.js": "/static/js/377.8325c12b.chunk.js",
+    "static/media/avatar.png": "/static/media/avatar.c0e1aef67ecf68fbff4c.png",
+    "index.html": "/index.html",
+    "main.a707207c.css.map": "/static/css/main.a707207c.css.map",
+    "main.7f64942e.js.map": "/static/js/main.7f64942e.js.map",
+    "377.8325c12b.chunk.js.map": "/static/js/377.8325c12b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a707207c.css",
-    "static/js/main.a68e1898.js"
+    "static/js/main.7f64942e.js"
   ]
 }
